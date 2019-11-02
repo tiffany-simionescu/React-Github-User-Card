@@ -45,7 +45,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <UserCard user={this.state.userInfo}/>
+        <UserCard user={this.state.userInfo} contribution={this.state.contributions}  />
         <FollowersCard follower={this.state.followersInfo} />
       </div>
     )

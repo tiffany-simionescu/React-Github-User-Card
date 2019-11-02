@@ -18,13 +18,17 @@ const Image = styled.img`
 `;
 
 const Span = styled.span`
-  margin-left: 10px;
+  margin-left: 8px;
   font-size: 16px;
 `;
 
 const GithubLink = styled.a`
   margin-left: 10px;
   font-size: 16px;
+`;
+
+const ColorImage = styled.div`
+  background-color: black;
 `;
 
 const UserCard = props => {
@@ -41,6 +45,10 @@ const UserCard = props => {
       <h3>Bio: 
         <Span>{props.user.bio}</Span>
       </h3>
+      {/* STRETCH GOAL */}
+      <ColorImage>
+        <img src="https://ghchart.rshah.org/tiffany-simionescu" width="500" height="150" alt="contributions" />
+      </ColorImage>
     </Card>
   )
 };
